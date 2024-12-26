@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Access Automation</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        header h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="back-to-broadcom-button">Back to Observability Stack</a>
+        <h1>Open Access Automation</h1>
+    </header>
+
+    <main>
+        <!-- Login Request Section -->
+        <section id="login-request">
+            <button class="action-button" onclick="toggleLoginRequest()">Demo Enviroinments</button>
+            <div id="login-dropdown" style="display: none;">
+                <ul>
+                    <a href="login-request.html" id="login-request-link" class="login-request-link">Login Request</a>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>UI Link</th>
+                            <th>Version</th>
+                            <th>Comment</th>
+                            <th>GCP Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://aai.com" target="_blank">AAI</a></td>
+                            <td>6.5.4-1</td>
+                            <td></td>
+                            <td>Internal-VPN Required</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://usdemoautomic.com" target="_blank">US Demo Automic </a></td>
+                            <td>12.3</td>
+                            <td></td>
+                            <td>Frankfurt- VPN Required</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://autosys.com" target="_blank">AutoSys </a></td>
+                            <td>24.0.00</td>
+                            <td></td>
+                            <td>Internal-VPN Required</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://externalaai.com" target="_blank">External AAI </a></td>
+                            <td>6.5.0-1</td>
+                            <td></td>
+                            <td>External</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://externalautominc.com" target="_blank">External Automic</a></td>
+                            <td>21.0.8</td>
+                            <td>Kubernetes Install</td>
+                            <td>External</td>
+                        <tr>
+                            <td><a href="https://demoautomic.com" target="_blank">Demo Automic </a></td>
+                            <td>24.1</td>
+                            <td>Including Remediation</td>
+                            <td>External</td>
+                        <tr>
+                            <td><a href="https://externalautosys.com" target="_blank">External AutoSys </a></td>
+                            <td>24.0.00</td>
+                            <td></td>
+                            <td>External</td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases">
+            <button class="action-button" onclick="toggleUseCaseContent()">Use Cases</button>
+            <div id="use-case-content" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Demo Script</th>
+                            <th>Category</th>
+                            <th>Content</th>
+                            <th>UC Status</th>
+                            <th>UC Actions</th>
+                            <th>Last Event</th>
+                            <th>Demo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bold">Functional Demos</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><a href="cloud-app-to-network.html">Cloud App to Network</a></td>
+                            <td>Automation/AppNeta</td>
+                            <td></td>
+                            <td><button class="status-button red">OFF</button></td>
+                            <td></td>
+                            <td>Nov 30: Sat 9:14 PM</td>
+                            <td><a href="launch-button-green.html" class="launch-link">
+                                <button class="launch-button green">LAUNCH</button></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="network-telemetry.html">Network Telemetry</a></td>
+                            <td>Automation</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="launch-button-green.html" class="launch-link">
+                                <button class="launch-button green">LAUNCH</button></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="fault-isolation-rca.html">Fault Isolation RCA</a></td>
+                            <td>Automation</td>
+                            <td></td>
+                            <td><button class="status-button red">OFF</button></td>
+                            <td></td>
+                            <td>Dec 10: Tue 9:29 PM</td>
+                            <td><a href="launch-button-green.html" class="launch-link">
+                                <button class="launch-button green">LAUNCH</button></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="proactive-capacity-planning.html">Proactive Capacity Planning</a></td>
+                            <td>Automation</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="launch-button-green.html" class="launch-link">
+                                <button class="launch-button green">LAUNCH</button></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="automation-custom-apps.html">Automation Custom Apps</a></td>
+                            <td>Automation</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="launch-button-green.html" class="launch-link">
+                                <button class="launch-button green">LAUNCH</button></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="traffic-congestion.html">Traffic Congestion</a></td>
+                            <td>Automation</td>
+                            <td></td>
+                            <td><button class="status-button red">OFF</button></td>
+                            <td></td>
+                            <td>Nov 30: Sat 9:14 PM</td>
+                            <td><a href="launch-button-green.html" class="launch-link">
+                                <button class="launch-button green">LAUNCH</button></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KyndleIT. All rights reserved. | <a href="https://www.kyndleit.com">Visit KyndleIT</a></p>
+        <p style="margin-top: 5px; font-size: 0.9rem; color: #555;">
+            Engineered for excellence and performance | Designed and Developed by 
+            <a href="https://www.linkedin.com/in/balaji-prasanth-9a90761a7/" target="_blank" style="color: #007BFF; text-decoration: none;">BalajiPrasanth</a>.
+        </p>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const productData = JSON.parse(localStorage.getItem("currentProduct"));
+            if (productData) {
+                document.title = `${productData.title} - Details`;
+            } else {
+                document.body.innerHTML = "<h1>Product not found</h1>";
+            }
+
+            // Toggle login request dropdown
+            window.toggleLoginRequest = () => {
+                const loginDropdown = document.getElementById("login-dropdown");
+                loginDropdown.style.display = loginDropdown.style.display === "none" ? "block" : "none";
+            };
+
+            // Toggle use case content visibility
+            window.toggleUseCaseContent = () => {
+                const useCaseContent = document.getElementById("use-case-content");
+                useCaseContent.style.display = useCaseContent.style.display === "none" ? "block" : "none";
+            };
+
+            // Handle demo architecture redirection
+            window.redirectDemoArchitecture = () => {
+                window.location.href = "demo-architecture.html";
+            };
+        });
+    </script>
+</body>
+</html>

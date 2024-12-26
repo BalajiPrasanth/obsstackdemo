@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Broadcom Products</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <!-- Language Dropdown -->
+    <div class="dropdown-container">
+      <select disabled>
+        <option>English</option>
+        <option>French</option>
+        <option>Spanish</option>
+        <option>German</option>
+        <option>Italian</option>
+      </select>
+      
+      <!-- Support Portal Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Support Portal</button>
+        <div class="dropdown-content">
+          <button onclick="window.location.href='https://support.broadcom.com/user'">Go to Portal</button>
+          <button onclick="window.location.href='https://profile.broadcom.com/web/registration'">Register</button>
+          <a href="https://profile.broadcom.com/web/forgot-password">Forgot Username/Password?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Broadcom Logo with Redirect -->
+    <a href="https://www.broadcom.com" target="_blank">
+      <img src="assets/broadcom.jpg" alt="Broadcom Logo">
+    </a>
+
+    <h1>Observability Stack</h1>
+
+    <!-- Search Bar -->
+    <div id="search-bar">
+      <input type="text" id="search-input" placeholder="Search products..." onkeyup="searchProducts()">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Search Results Section -->
+    <section id="search-results">
+      <ul id="results-list"></ul>
+    </section>
+
+    <!-- Demo Environments Section -->
+    <section id="demo-environments">
+      <h2>Broadcom Software - Demo Environments</h2>
+        <ul>
+           <!-- Example links with data-product attribute -->
+            <li><a href="product-details.html" class="sub-product-link" data-product="netops">Open Access 3 NetOps</a></li>
+            <li><a href="automation.html" class="sub-product-link" data-product="automation">Open Access Automation</a></li>
+            <li><a href="aiops.html" class="sub-product-link" data-product="aiops">Open Access AIOps</a></li>
+        </ul>        
+    </section>
+  </main>
+
+<footer>
+    <p>&copy; 2024 KyndleIT. All rights reserved. | <a href="https://www.kyndleit.com">Visit KyndleIT</a></p>
+    <p style="margin-top: 5px; font-size: 0.9rem; color: #555;">
+        Engineered for excellence and performance | Designed and Developed by 
+        <a href="https://www.linkedin.com/in/balaji-prasanth-9a90761a7/" target="_blank" style="color: #007BFF; text-decoration: none;">BalajiPrasanth</a>.
+    </p>
+</footer>
+
+  <!-- External JS File -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

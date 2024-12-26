@@ -1,0 +1,521 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(135deg, #f0f0f0, #dce4e7);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #00ccff;
+    position: relative;
+    margin: 0;
+}
+
+header img {
+    width: 500px;
+    margin: 15px 0;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+header .dropdown-container {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header select,
+header .dropbtn {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header select:disabled {
+    background-color: #f5f5f5;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .dropdown-content button,
+header .dropdown-content a {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+    text-decoration: none;
+}
+
+header .dropdown-content button:hover,
+header .dropdown-content a:hover {
+    background-color: #0055a4;
+}
+
+/* Demo Environments Section */
+#demo-environments a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 15px;
+    background: linear-gradient(135deg, #0066cc, #00ccff);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#demo-environments a:hover {
+    background-color: #004f87;
+    transform: translateY(-5px);
+}
+
+/* Search Bar Styling */
+#search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#search-bar button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#search-bar button:hover {
+    background-color: #0055a4;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+footer a {
+    color: #00ccff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Forgot Username/Password Link */
+#forgot-username-password {
+    color: #003366;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+#forgot-username-password:hover {
+    color: #00ccff;
+}
+
+/* Support Portal Button */
+#support-portal-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#support-portal-button:hover {
+    background-color: #e70303;
+    transform: scale(1.05);
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00ccff;
+}
+
+/* NetOps Solution Page Styling */
+#back-to-broadcom-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #003366;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#back-to-broadcom-button:hover {
+    background-color: #002244;
+}
+
+#login-request-link {
+    pointer-events: none; /* Disables clicking */
+    color: gray; /* Makes the link appear grayed out */
+    text-decoration: none; /* Optional: removes underline */
+    font-weight: bold; /* Makes the text bold */
+}
+
+
+#login-request-link:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+#login-request button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#login-request button:hover {
+    background-color: #0055a4;
+    transform: scale(1.05);
+}
+
+/* Login Request Dropdown Table */
+#login-dropdown table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Ensures columns are evenly distributed */
+}
+
+#login-dropdown th, #login-dropdown td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#login-dropdown th {
+    background-color: #003366;
+    color: white;
+    text-align: center; /* Centers the header text */
+}
+
+#login-dropdown td {
+     text-align: center; /* Centers the data text */
+}
+
+#login-dropdown a {
+    color: #003366;
+    text-decoration: none;
+}
+
+#login-dropdown a:hover {
+     text-decoration: underline;
+    
+}
+
+/* Mobile Optimization for Table */
+@media (max-width: 768px) {
+    #netops-table th, #netops-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #netops-table td {
+        text-align: center;
+    }
+}
+
+#use-case-content {
+    display: none;
+}
+
+#use-case-content.show {
+    display: block;
+}
+
+/* Demo Architecture Section */
+#demo-architecture button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#demo-architecture button:hover {
+    background-color: #0055a4;
+    transform: scale(1.05);
+}
+
+#demo-architecture img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: none; /* Initially hidden */
+}
+
+#demo-architecture img.show {
+    display: block; /* Show image when class "show" is added */
+}
+
+
+/* Use Cases Section */
+#use-cases button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#use-cases h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center; /* Center the title */
+}
+
+#use-cases p {
+    font-size: 16px;
+    color: #e4e4e4;
+    text-align: justify; /* Justify the paragraph for a cleaner layout */
+}
+
+#use-cases .use-case-content {
+    display: none; /* Initially hidden */
+}
+
+#use-cases .use-case-content.show {
+    display: block; /* Show content when class "show" is added */
+}
+
+#use-cases button:hover {
+    background-color: #0055a4;
+    transform: scale(1.05);
+}
+
+/* use-case-content Table */
+#use-case-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Ensures columns are evenly distributed */
+}
+
+#use-case-content th, #use-case-content td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#use-case-content th {
+    background-color: #003366;
+    color: white;
+    text-align: center; /* Centers the header text */
+}
+
+#use-case-content td {
+     text-align: center; /* Centers the data text */
+}
+
+#use-case-content a {
+    color: #003366;
+    text-decoration: none;
+}
+
+#use-case-content a:hover {
+     text-decoration: underline;
+    
+}
+/*bold for functional demo */
+td.bold {
+    font-weight: bold;
+}
+
+/* Ensure red color styling for status-button with higher specificity */
+button.status-button.red {
+    background-color: #ff0000 !important; /* Green background with high priority */
+    color: rgb(248, 246, 246) !important;              /* White text */
+    border: none !important;              /* No border */
+    padding: 10px 20px !important;        /* Padding inside the button */
+    font-size: 16px !important;           /* Text size */
+    cursor: pointer !important;          /* Pointer cursor on hover */
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+button.status-button.red{
+    background-color: #f70000 !important; /* Darker green on hover */
+    transform: scale(1.05);                /* Slight zoom effect */
+}
+
+/* Ensure green color styling for launch-button with higher specificity */
+button.launch-button.green {
+    background-color: #28a745 !important; /* Green background with high priority */
+    color: white !important;              /* White text */
+    border: none !important;              /* No border */
+    padding: 10px 20px !important;        /* Padding inside the button */
+    font-size: 16px !important;           /* Text size */
+    cursor: pointer !important;          /* Pointer cursor on hover */
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.launch-button.green:hover {
+    background-color: #218838 !important; /* Darker green on hover */
+    transform: scale(1.05);                /* Slight zoom effect */
+}
+
+
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    header img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #search-bar input {
+        width: 200px;
+    }
+
+    #search-bar button {
+        font-size: 14px;
+    }
+
+    #demo-environments a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #netops-table th, #netops-table td {
+        font-size: 14px;
+    }
+
+    #demo-architecture img {
+        max-width: 90%;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #search-bar input {
+        width: 150px;
+    }
+
+    #search-bar button {
+        font-size: 12px;
+    }
+}
+
+/* New Action Buttons */
+.action-button {
+    background-color: #003366; /* Blue background */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    padding: 10px 20px;        /* Padding inside the button */
+    font-size: 16px;           /* Text size */
+    cursor: pointer;          /* Pointer cursor on hover */
+    width: 100%;
+    box-sizing: border-box;
+}
+
